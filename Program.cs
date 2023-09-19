@@ -10,24 +10,44 @@
             int AnändareTal = int.Parse(Console.ReadLine());
 
 
-            for (int i = 0; i <= 5; i++) 
+            for (int i = 1; i < 5; i++)
             {
+               
 
-                if ( slump_tal < AnändareTal)
-                   
-                { Console.WriteLine("Tyvärr, du gissade för lågt!"); 
-                }
-                if (slump_tal > AnändareTal)
+                if (slump_tal < AnändareTal)
 
                 {
-                    Console.WriteLine("Tyvärr, du gissade för högt!");
+                    Console.WriteLine("Tyvärr, du gissade för Högt!");
+
                 }
-                if (slump_tal == AnändareTal)
+                else if (slump_tal > AnändareTal)
+
+                {
+                    Console.WriteLine("Tyvärr, du gissade för Lågt!");
+                }
+
+
+                else if (slump_tal == AnändareTal)
                 {
                     Console.WriteLine("Wohoo! Du klarade det!");
-                }                
-                
+                    break;
+                }
+
+
+                AnändareTal = int.Parse(Console.ReadLine());
+
             }
+            if (AnändareTal != slump_tal) 
+            {
+                Console.WriteLine( "Tyvärr, du lyckades inte gissa talet på fem försök.");
+            }
+                  
+                    
+               
+                        
+                
+            
         }
+        static CheckGuess();
     }
 }
