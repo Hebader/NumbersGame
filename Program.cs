@@ -7,10 +7,10 @@
             Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
             Random randomerare = new Random(); // skapar en varibel för att slunmpa tal.
             int slump_tal = randomerare.Next(1, 21); //Slumpar ett tal mellan 1-20.
-            int AnändareTal = int.Parse(Console.ReadLine());
+            int AnändareTal = int.Parse(Console.ReadLine()); //Användaren skriver in en siffra
 
-
-            for (int i = 1; i < 5; i++)
+            // En for loop som låter användaren gissa 5 gånger.
+            for (int i = 1; i < 5; i++) // Börjar loopen från 1 för att användaren redan gissat en gång
             {
                
 
@@ -33,13 +33,14 @@
                     break;
                 }
 
-
                 AnändareTal = int.Parse(Console.ReadLine());
 
             }
-            if (AnändareTal != slump_tal) 
+
+            while (AnändareTal != slump_tal) 
             {
                 Console.WriteLine( "Tyvärr, du lyckades inte gissa talet på fem försök.");
+                break;
             }
                   
                     
