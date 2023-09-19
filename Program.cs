@@ -9,8 +9,8 @@
             int slump_tal = randomerare.Next(1, 21); //Slumpar ett tal mellan 1-20.
           
 
-            // En for loop som låter användaren gissa 5 gånger.
-            for (int i = 0; i < 5; i++) // Börjar loopen från 1 för att användaren redan gissat en gång
+          
+            for (int i = 0; i < 5; i++) // En for loop som kör från 0-4, dvs 5 gånger.
             {
                 int AnändareTal = int.Parse(Console.ReadLine()); //Användaren skriver in en siffra
 
@@ -37,7 +37,7 @@
 
                 {
                     Console.WriteLine("Tyvärr, du lyckades inte gissa talet på fem försök.");
-                    break;
+                    
                 }
 
 
