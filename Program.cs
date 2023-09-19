@@ -9,7 +9,7 @@ namespace NumbersGame
             Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
            
 
-            CheckGuess();
+            CheckGuess(); // Använder metoden "CheckGuess()" i Main metoden.
 
 
 
@@ -17,7 +17,7 @@ namespace NumbersGame
         }
 
            
-            static void CheckGuess()
+            static void CheckGuess()  //Skapar en metod
         { 
      
 
@@ -62,7 +62,7 @@ namespace NumbersGame
 
 
 
-        }
+        } 
 
     }
 }
