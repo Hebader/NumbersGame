@@ -12,8 +12,6 @@ namespace NumbersGame
             CheckGuess(); // Använder metoden "CheckGuess()" i Main metoden.
 
 
-
-
         }
 
            
@@ -47,7 +45,7 @@ namespace NumbersGame
                     break;
                 }
 
-                if (i == 4)
+                if (i == 4) // När användaren gissar 5 gånger kommer detta skrivas ut
 
                 {
                     Console.WriteLine("Tyvärr, du lyckades inte gissa talet på fem försök.");
