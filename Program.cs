@@ -43,7 +43,7 @@ namespace NumbersGame
                 else if (slump_tal == AnändareTal) // Om varken första eller andra villkoret stämmer
                 {
                     Console.WriteLine("Wohoo! Du klarade det!");
-                    break;
+                    break; // Om användaren gissar rätt avbryts loopen
                 }
 
                 if (i == 5) // När användaren gissat 5 gånger kommer detta skrivas ut
