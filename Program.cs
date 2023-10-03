@@ -9,23 +9,17 @@ namespace NumbersGame
             //Utskrift till användaren
             Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
            
-
             CheckGuess(); // lägger in metoden "CheckGuess()" i Main metoden.
-
-
         }
 
-           
-            static void CheckGuess()  //Skapar en metod
+        static void CheckGuess()  //Skapar en metod
         { 
-     
-
             Random randomerare = new Random(); // skapar en varibel för att slunmpa tal.
             int slump_tal = randomerare.Next(1, 21); //Slumpar ett tal mellan 1-20.
 
             for (int i = 1; i <= 5; i++) // En for loop som kör från 1-5, dvs 5 gånger.
             {
-                int AnändareTal = int.Parse(Console.ReadLine()); //Användaren skriver in en siffra
+                int AnändareTal = Int32.Parse(Console.ReadLine()); //Användaren skriver in en siffra
 
                 if (slump_tal < AnändareTal) // Villkor
 
