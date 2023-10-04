@@ -19,7 +19,10 @@ namespace NumbersGame
 
             for (int i = 1; i <= 5; i++) // En for loop som kör från 1-5, dvs 5 gånger.
             {
-                int AnändareTal = Int32.Parse(Console.ReadLine()); //Användaren skriver in en siffra
+                int AnändareTal;
+                string input = Console.ReadLine();  //Användaren skriver in en siffra
+                bool isString = int.TryParse(input, out AnändareTal);
+       
 
                 if (slump_tal < AnändareTal) // Villkor
 
